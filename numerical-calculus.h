@@ -7,6 +7,13 @@
  */
 void gauss(int n, double a[n][n], double*, double*);
 /*
+ * 共役勾配法 Ax = b
+ * input : ndim, A[ndim][ndim], x[ndim], b[ndim]
+ * output: x に格納
+ * CG_Max_Iteration 回繰り返して、収束しなければメッセージを出力
+ */
+void conjugate_gradient(int ndim, double a[ndim][ndim], double x[ndim], double b[ndim]);
+/*
  * ルンゲクッタ法
  * input: dim, x[dim], tmin, tmax, n, function
  */
