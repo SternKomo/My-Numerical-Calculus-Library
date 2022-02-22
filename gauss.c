@@ -36,8 +36,10 @@ void gauss(int n, double a[n][n], double x[n], double b[n]){
     */
   }
   // 後退代入法 (Backward substitution)
-  for(int k=n-1; k>=0; k--)
+  for(int k=n-1; k>=0; k--){
+    if(a[k][k] == 0){ printf("解を持たない\n"); exit(1);}
     x[k] = (b[k] - gauss_prod_sum(n, k, a, x)) / a[k][k];
+  }
 }
 
 /*
