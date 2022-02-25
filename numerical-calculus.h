@@ -7,6 +7,12 @@
  */
 void gauss(int n, double a[n][n], double*, double*);
 /*
+ * 枢軸選択付きLU分解 Ax = b => LUx = Pb
+ * input : n, A[n][n], x[n], b[n]
+ * output: xに格納、引数を増やして分解したL,Uを返すような感じにもできる
+ */
+void lu_decomposition(int n, double a[n][n], double x[n], double b[n]);
+/*
  * 共役勾配法 Ax = b
  * input : ndim, A[ndim][ndim], x[ndim], b[ndim]
  * output: x に格納
