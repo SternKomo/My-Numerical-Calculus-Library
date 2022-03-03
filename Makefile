@@ -1,3 +1,4 @@
+# 参考 https://docs.oracle.com/cd/E19620-01/805-5827/6j5gfrank/index.html
 CC = gcc
 CFLAGS = -Wall -Wextra -std=c99 -MMD -MP
 
