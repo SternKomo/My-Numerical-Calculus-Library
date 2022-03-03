@@ -1,7 +1,0 @@
-ファイルを変更する
-git status で状態を確認する
-git diff で変更内容を確認
-git add ファイル名 で変更したファイル commit する設定にする
-git commit -m "メッセージ" でコミットする
-git log でコミットログを確認
-git push origin main で push する
